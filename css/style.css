@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;   
+}
+.masthead {
+    background-color: #B8DFF2;
+    width:100%;
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('/Images/slider-image.png');
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .cut{
+      border-radius: 20px;
+      margin:auto;
+  }
+
+.panels{
+    height: 50vh;
+    display: flex;
+    border-radius:20px;
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+    transition:
+            flex cubic-bezier(.61,-0.19,.7,-0.1) 600ms,
+            font-size 0s;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
+    filter: brightness(75%);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+}
+
+.panel>*{
+    color: white;
+    text-transform: capitalize;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    transition: 300ms;
+}
+
+.panel1{
+    background: url('/Images/gallery-1.png') center no-repeat;
+    background-size: cover;
+}
+
+.panel2{
+    background: url('/Images/gallery-2.png') center no-repeat;
+    background-size: cover;
+}
+
+.panel3{
+    background: url('/Images/gallery-3.png') center no-repeat;
+    background-size: cover;
+}
+
+.panel4{
+    background: url('/Images/gallery-4.png') center no-repeat;
+        background-size: cover;
+}
+
+.panel5{
+    background: url('/Images/gallery-5.png') center no-repeat;
+        background-size: cover;
+}
+.panel6{
+    background: url('/Images/gallery-6.png') center no-repeat;
+        background-size: cover;
+}
+.panel>*:first-child{
+    transform: translateY(-200px);
+}
+.panel.open-active>*:first-child{
+    transform: translateY(0);
+}
+
+.panel>*:last-child{
+    transform: translateY(200px);
+}
+.panel.open-active>*:last-child{
+    transform: translateY(0);
+}
+
+.open{
+    flex: 5;
+    filter: brightness(100%);
+    font-size: 1.5em;
+}
+
+/*FOOTER*/
+
+footer {
+    background: #000000;
+    color: white;
+    margin-top:100px;
+  }
+  
+  footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+  }
+  
+  footer a:hover {
+    color: #FA944B;
+    text-decoration: none;
+  }
+  
+  .footer-middle {
+    padding-top: 2em;
+    color: white;
+  }
+  
+  
+
+  #fooooter{
+      background-color:#1a1818;
+  }
+  #comp{
+      color:#38DBAE;
+  }
